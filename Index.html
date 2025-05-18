@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"> 
-    <title>ADHD todolist</title>
+    <title>ADHD Helper</title>
+    <link href="css/tailwind.css" rel="stylesheet">
 </head>
-<body>
-    <div id="list_Controller" class="wrapper">
-        <form id="listForm">
-            <input type="text" id="getListName" name="listName" placeholder="List Name" required>
-            <input type="text" id="getListDescription" name="listDescription" placeholder="Description">
-            <button id="createList" type="button">Create List</button>
-        </form>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">ADHD Helper</h1>
+        <div>
+            <input type="text" id="getListName" placeholder="List Name" class="border p-2 mb-2 w-full">
+            <input type="text" id="getListDescription" placeholder="List Description" class="border p-2 mb-2 w-full">
+            <button id="createList" class="bg-blue-500 text-white p-2">Create List</button>
+        </div>
+        <div id="listView" class="mt-4"></div>
     </div>
-    <div id="listView" class="wrapper">
-
-    </div>
-
-    <div class="list">
-        <h2>Test Name</h2>
-        <p>Officia iusto cumque molestiae?</p>
-        <button id="removeList">Remove List</button>
-        <button id="renameList">Rename List</button>
-    </div>
-
     <script src="js/main.js"></script>
 </body>
 </html>

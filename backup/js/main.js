@@ -16,11 +16,12 @@ function createList() {
         renameList: function(newName) { this.name = newName; }
     };
 
+    // Use the properties directly, not this.name/this.description
     todoList.listUI = `<div class="list">
-        <h2 class="text-2xl font-bold">${todoList.name}</h2>
-        <p class="text-gray-600">${todoList.description}</p>
-        <button id="removeList" class="bg-red-500 text-white px-4 py-2 rounded">Remove List</button>
-        <button id="renameList" class="bg-blue-500 text-white px-4 py-2 rounded">Rename List</button>
+        <h2>${todoList.name}</h2>
+        <p>${todoList.description}</p>
+        <button id="removeList">Remove List</button>
+        <button id="renameList">Rename List</button>
     </div>`;
 
     document.querySelector('#listView').innerHTML = todoList.listUI;
@@ -28,3 +29,6 @@ function createList() {
 
     console.log(todoList);
 }
+
+
+

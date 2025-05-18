@@ -1,11 +1,37 @@
-# ADHD-Helper todoist
+# ADHD Helper
 
-I ll keep it short for now:
+## Project Overview
+ADHD Helper is a web application designed to assist users in managing their tasks and to-do lists. The application allows users to create, rename, and remove lists, providing a simple and intuitive interface.
 
-I want to create a simple todo list on the web for people with ADHD that struggle with execution dysfunction.
-The way i d like this to work is basically that you can create lists for things that you need or want to do.
-You can star them and other typical todo list stuff but here for each item on the list we connect it to an AI Agent who will then take the task
-and plan out subtasks for it.
-You mark your tasks by importance where they get put on a seperate list on which you ll see the main tasks goal but on the todo you have the actual first subtasks to start the journey
+## Files and Directories
+- **js/main.js**: Contains the JavaScript code for the application, including the `createList` function which creates a to-do list object and updates the UI.
+- **css/tailwind.css**: This file will contain the Tailwind CSS styles, generated from the Tailwind CSS build process.
+- **index.html**: The main HTML file for the project, serving as the entry point for the web application and linking to the CSS and JavaScript files.
+- **package.json**: The configuration file for npm, listing dependencies (including Tailwind CSS) and scripts for building and running the project.
+- **tailwind.config.js**: The configuration file for Tailwind CSS, allowing customization of the default Tailwind styles and settings.
 
-I ve always struggled with this so i m trying to create this for me in the first place and if it has value i d like to make an actual product out of it with a free version. Not sure about this yet
+## Installation Instructions
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd ADHD-Helper
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Build the Tailwind CSS:
+   ```
+   npx tailwindcss -i ./css/tailwind.css -o ./css/output.css --watch
+   ```
+
+4. Open `index.html` in your browser to view the application.
+
+## Usage
+- To create a new to-do list, enter a name and description in the input fields and click the "Create List" button.
+- You can rename or remove lists using the provided buttons in the UI.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
